@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Inter", sans-serif;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    background-color: #111111;
+    padding: 20px;
+}
+.nav-left-section {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-left-section h2 {
+    font-family: "Archivo Black", sans-serif;
+    font-size: 24px;
+    color: #ffffff;
+}
+.nav-left-section img {
+    width: 150px;
+    height: 50px;
+    margin-right: 10px;
+    filter: invert(1);
+}
+.nav-right-section {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+.nav-right-section a {
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.main-ca-container {
+    width: 100%;
+    height: 500px;
+    background-image: url("./img/arcic-monkys.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.ca-main--container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    text-align: center;
+}
+.ca-main--container h1 {
+    font-family: "Archivo Black", sans-serif;
+    font-size: 48px;
+    color: #000;
+    margin-bottom: 10px;
+}
+.ca-main--container p {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.ca-main--container input {
+    width: 50%;
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    outline: none;
+    padding: 20px;
+    font-size: 20px;
+    color: #000;
+    background-color: #d0d0d0;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+.ca-main--container input::placeholder {
+    color: #000;
+}
+.ca-main--container span {
+    background-color: #d0d0d0;
+    width: 25%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+.ca-main--container span a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+.ca-main--container span:hover {
+    cursor: pointer;
+}
+.main-products-container {
+    height: 100000px;
+}
