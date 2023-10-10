@@ -2,9 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 62.5%;
 }
 body {
     font-family: "Inter", sans-serif;
+    background-color: #000;
 }
 nav {
     display: flex;
@@ -22,8 +24,9 @@ nav {
 }
 .nav-left-section h2 {
     font-family: "Archivo Black", sans-serif;
-    font-size: 24px;
+    font-size: 2.4rem;
     color: #ffffff;
+    font-weight: bold;
 }
 .nav-left-section img {
     width: 150px;
@@ -42,7 +45,7 @@ nav {
     text-decoration: none;
     color: #ffffff;
     margin: 0 20px;
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: bold;
 }
 .main-ca-container {
@@ -65,16 +68,21 @@ nav {
     justify-content: center;
     height: 50%;
     text-align: center;
+    background-color: rgba(255, 255, 255, 0.265);
+    border-radius: 20px;
+    padding: 10px;
 }
 .ca-main--container h1 {
     font-family: "Archivo Black", sans-serif;
-    font-size: 48px;
-    color: #000;
+    font-size: 4.8rem;
+    color: #111111;
     margin-bottom: 10px;
+    font-weight: bold;
 }
 .ca-main--container p {
-    font-size: 18px;
+    font-size: 1.8rem;
     color: #fff;
+    font-weight: 300;
     margin-bottom: 30px;
 }
 .ca-main--container input {
@@ -85,7 +93,7 @@ nav {
     margin-bottom: 15px;
     outline: none;
     padding: 20px;
-    font-size: 20px;
+    font-size: 2rem;
     color: #000;
     background-color: #d0d0d0;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
@@ -107,10 +115,67 @@ nav {
     text-decoration: none;
     color: #000;
     font-weight: bold;
+    font-size: 1.8rem;
 }
 .ca-main--container span:hover {
     cursor: pointer;
 }
 .main-products-container {
-    height: 100000px;
+    width: 1200px;
+    height: auto;
+    margin: 50px auto 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #111111;
+    border-radius: 15px;
+}
+.products-container--title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main-cards--title {
+    margin: 30px 0 10px 0;
+    font-family: "Archivo Black", sans-serif;
+    font-size: 3rem;
+    color: #fff;
+}
+.main-cards--info {
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+.main-cards-container {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0 30px 0;
+}
+.product-cards--container {
+    margin: 0 20px;
+}
+.product-cards--container img {
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+}
+.product-cards--container h3 {
+    font-size: 2.4rem;
+    color: #fff;
+    font-weight: bold;
+}
+.product-cards--container .price {
+    font-size: 2rem;
+    color: #fff;
+    margin: 3px 0 10px;
+    font-weight: bold;
+}
+.product-cards--container p {
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 300;
 }
