@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-size: 62.5%;
 }
+::-webkit-scrollbar {
+    display: none;
+}
 body {
     font-family: "Inter", sans-serif;
     background-color: #000;
@@ -105,6 +108,7 @@ nav {
     background-color: #d0d0d0;
     width: 25%;
     height: 50px;
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -112,13 +116,18 @@ nav {
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 }
 .ca-main--container span a {
+    font-family: "Archivo Black", sans-serif;
     text-decoration: none;
     color: #000;
-    font-weight: bold;
-    font-size: 1.8rem;
+    font-size: 2rem;
+    padding: 10px;
 }
 .ca-main--container span:hover {
     cursor: pointer;
+    background-color: #111111;
+}
+.ca-main--container span:hover a {
+    color: #fff;
 }
 .main-products-container {
     width: 1200px;
@@ -151,8 +160,6 @@ nav {
 .main-cards-container {
     width: 90%;
     display: flex;
-    align-items: center;
-    justify-content: center;
     margin: 10px 0 30px 0;
 }
 .product-cards--container {
@@ -178,4 +185,41 @@ nav {
     font-size: 1.8rem;
     color: #fff;
     font-weight: 300;
+}
+.main-products--button {
+    width: 270px;
+    height: 50px;
+    margin: 0 auto 30px;
+    border: none;
+    border-radius: 15px;
+    font-size: 2rem;
+    background-color: #d0d0d0;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    outline: none;
+    font-family: "Archivo Black", sans-serif;
+    color: #000;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.main-products--button:hover {
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+}
+.main-division--container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.main-division--container img {
+    width: 30%;
+    height: 30%;
+    margin: 0 auto 18px;
+}
+.main-division--container hr {
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    border: none;
 }
