@@ -4,12 +4,34 @@
     box-sizing: border-box;
     font-size: 62.5%;
 }
+html {
+    scroll-behavior: smooth;
+}
 ::-webkit-scrollbar {
     display: none;
 }
 body {
     font-family: "Inter", sans-serif;
     background-color: #000;
+}
+.return {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url("./img/arrow-up.png");
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    background-color: #d0d0d0;
+    transition: 0.3s;
+}
+.return:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    transform: scale(0.9);
 }
 nav {
     display: flex;
@@ -106,6 +128,7 @@ nav {
 }
 .ca-main--container span {
     background-color: rgba(255, 255, 255, 0.265);
+    transition: 0.3s;
     width: 25%;
     height: 50px;
     display: flex;
@@ -124,6 +147,8 @@ nav {
 .ca-main--container span:hover {
     cursor: pointer;
     background-color: #d0d0d0;
+    transition: 0.3s;
+    transform: scale(0.9);
 }
 .ca-main--container span:hover a {
     color: #111;
@@ -197,6 +222,7 @@ nav {
     height: 50px;
     margin: 0 auto 40px;
     border-radius: 15px;
+    transition: 0.3s;
     font-size: 2rem;
     background-color: #111111;
     border: 3px solid #d0d0d0;
@@ -209,6 +235,8 @@ nav {
     cursor: pointer;
     background-color: #d0d0d0;
     color: #111111;
+    transition: 0.3s;
+    transform: scale(0.9);
 }
 .main-division--container {
     width: 100%;
@@ -239,6 +267,7 @@ nav {
     width: 100%;
     height: 50%;
     object-fit: cover;
+    border-radius: 10px;
 }
 .news--big-title {
     margin: 5px 0 10px 0;
@@ -250,9 +279,11 @@ nav {
     color: #d0d0d0;
     font-size: 1.8rem;
     font-weight: bold;
+    transition: 0.3s;
 }
 .first--news-container a:hover {
     color: #fff;
+    transition: 0.3s;
 }
 .second--news-container {
     grid-row-start: 1;
@@ -283,6 +314,7 @@ nav {
     grid-row-start: 1;
     grid-row-end: 4;
     grid-column-start: 1;
+    border-radius: 10px;
 }
 .news--small-title {
     margin: 0 0 10px;
@@ -339,7 +371,7 @@ nav {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 10px 0 0 0;
+    border-radius: 10px;
 }
 .first--horizontal-image {
     grid-row-start: 1;
@@ -349,7 +381,7 @@ nav {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 0 10px 0 0;
+    border-radius: 10px;
 }
 .second--horizontal-image {
     grid-row-start: 3;
@@ -359,7 +391,7 @@ nav {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 0 0 0 10px;
+    border-radius: 10px;
 }
 .second--big-image {
     grid-row-start: 2;
@@ -369,7 +401,7 @@ nav {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 0 0 10px 0;
+    border-radius: 10px;
 }
 .main-contact-container {
     display: flex;
@@ -475,11 +507,14 @@ form button {
     font-size: 2rem;
     font-weight: bold;
     border: 3px solid #d0d0d0;
+    transition: 0.3s;
 }
 form button:hover {
     cursor: pointer;
     background-color: #d0d0d0;
     color: #111111;
+    transition: 0.3s;
+    transform: scale(0.9);
 }
 .main-table-container {
     width: 50%;
@@ -491,6 +526,7 @@ form button:hover {
 .main-table-container table {
     width: 100%;
     height: 100%;
+    border-collapse: collapse;
 }
 .table-title {
     font-family: "Archivo Black", sans-serif;
@@ -508,4 +544,48 @@ tr td {
     font-weight: 300;
     text-align: center;
     border-bottom: #fff solid 3px;
+}
+.main-footer-container {
+    margin-top: 50px;
+    width: 100%;
+    height: 20vh;
+    background-color: #111111;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-footer-container p {
+    margin-top: 30px;
+    font-size: 2.3rem;
+    color: #fff;
+    font-weight: 300;
+}
+.main-footer-container p strong {
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+.main-footer-container ul {
+    display: flex;
+}
+.main-footer-container ul li {
+    width: 64px;
+    height: 64px;
+    margin: 0 10px;
+    background-image: url("./img/social-media.png");
+    background-repeat: no-repeat;
+    list-style: none;
+}
+.main-footer-container ul li:nth-child(1) {
+    background-position: 0 0;
+}
+.main-footer-container ul li:nth-child(1):hover {
+    background-position: 0 -64px;
+    cursor: pointer;
+}
+.main-footer-container ul li:nth-child(2) {
+    background-position: -64px 0;
+    cursor: pointer;
+}
+.main-footer-container ul li:nth-child(2):hover {
+    background-position: -64px -64px;
 }
