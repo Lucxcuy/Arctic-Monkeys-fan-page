@@ -545,6 +545,13 @@ tr td {
     text-align: center;
     border-bottom: #fff solid 3px;
 }
+.verticaltxt {
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 10px;
+}
 .main-footer-container {
     margin-top: 50px;
     width: 100%;
