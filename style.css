@@ -555,7 +555,7 @@ tr td {
 footer {
     margin-top: 50px;
     width: 100%;
-    height: 300px;
+    height: max-content;
     background-color: #111111;
     display: flex;
     flex-direction: column;
@@ -584,7 +584,7 @@ footer {
 .main-footer-container ul li {
     width: 64px;
     height: 64px;
-    margin: 0 10px;
+    margin: 0 10px 20px 0;
     background-image: url("./img/social-media.png");
     background-repeat: no-repeat;
     list-style: none;
