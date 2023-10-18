@@ -552,11 +552,18 @@ tr td {
     font-weight: bold;
     padding: 10px;
 }
-.main-footer-container {
+footer {
     margin-top: 50px;
     width: 100%;
     height: 20vh;
     background-color: #111111;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-footer-container {
+    width: 50%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
